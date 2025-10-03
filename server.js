@@ -13,6 +13,7 @@ app.use(cors());
 // Routes
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 app.use("/api/v1/notes", require("./routes/noteRoutes"));
+//app.use("/api/v1/admin", require("./routes/adminRoutes")); // ✅ Admin routes
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
